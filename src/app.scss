@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-200;
+  @apply p-8;
+}
+
+#app {
+  transform : translate(0, 50%) scale(2);
+}
+
+#app > div {
+  width    : 164px;
+  height   : 151px;
+  overflow : hidden;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Pascal Hesselink | Dice</title>
+    <link href="css/app.css?v=3" type="text/css" rel="stylesheet"/>
+    <link
+            rel="shortcut icon"
+            href="data:image/x-icon;,"
+            type="image/x-icon"
+    />
+</head>
+<body class="font-sans bg-gray-200 subpixel-antialiased select-none overflow-hidden">
+<div id="app">
+    <div class="relative mx-auto">
+        <dice :item-id="5" ref="dice_1" style=top:0px;left:74px;"></dice>
+        <dice :item-id="4" ref="dice_2" style=top:20px;left:40px;"></dice>
+        <dice :item-id="3" ref="dice_3" style=top:40px;left:6px;"></dice>
+        <dice :item-id="1" ref="dice_4" style=top:65px;left:35px;"></dice>
+        <dice :item-id="2" ref="dice_5" style=top:30px;left:100px;"></dice>
+    </div>
+    <div class="text-center my-2 w-full mx-auto">
+        <button class="block w-full px-2 py-2 bg-orange-500 focus:outline-none text-white tracking-wider mt-3" @click="closeAll">Close all</button>
+        <button class="block w-full px-2 py-2 bg-green-500 focus:outline-none text-white tracking-wider mt-3" @click="rollAll">Roll all</button>
+    </div>
+</div>
+<script src="js/app.js?v=3"></script>
+</body>
+</html>

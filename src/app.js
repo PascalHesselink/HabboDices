@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import dice from './dice';
+import dice from './Dice';
 
 new Vue({
     el         : '#app',
